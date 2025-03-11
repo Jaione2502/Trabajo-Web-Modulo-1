@@ -1,0 +1,71 @@
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Efecto de hover en los enlaces del menú */
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Estilos del submenú (dropdown) */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: white;
+}
+
+/* Efecto de hover en los elementos del submenú */
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Mostrar el submenú cuando el mouse pasa sobre el contenedor */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ /* Estilos del pie de página */
+ footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+  }
