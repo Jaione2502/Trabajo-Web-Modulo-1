@@ -54,9 +54,4 @@ function mostrarRecetas(recetas) {
         
       recipesContainer.appendChild(recetaCard);
     });
-
-
 }
-
-
-
