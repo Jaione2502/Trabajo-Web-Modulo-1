@@ -34,15 +34,20 @@
         </nav>
     </header>
 
-    <h1 class="margin-left: 5px;">Buscador de Recetas por ingredientes</h1>
+    <h1 class="search_title">Buscador de Recetas</h1>
     <br>
-    <input type="text" id="ingredients" class="search-box" placeholder="Ingresa ingredientes separados por coma" />
-    <button onclick="buscarRecetas()">Buscar Recetas</button>
+    <div class="seach_box_container">
+       
+        
+        <input type="text" id="ingredients" class="search-box" placeholder="Ingresa los alimentos separados por coma" />
+        <button onclick="buscarRecetas()">Buscar Recetas</button>
+    </div>
+    
     <div class="section">
-        <h2>Tipos de Alimentos</h2>
+        <h2 class="search_Subtitle">Alimentos Populares</h2>
         <div class="food-group">
             <div>
-                <h3>Frutas</h3>
+                <h3 class="food-group_titlelista">Frutas</h3>
                 <ul class="food-group_lista">
                     <li onclick="buscarRecetasLista('apple')" class="food-group_lista_detalle">Manzana</li>
                     <li onclick="buscarRecetasLista('banana')" class="food-group_lista_detalle">Plátano</li>
@@ -51,7 +56,7 @@
                 </ul>
             </div>
             <div>
-                <h3>Verduras</h3>
+                <h3 class="food-group_titlelista">Verduras</h3>
                 <ul  class="food-group_lista">
                     <li onclick="buscarRecetasLista('carrot')" class="food-group_lista_detalle">Zanahoria</li>
                     <li onclick="buscarRecetasLista('tomato')" class="food-group_lista_detalle">Tomate</li>
@@ -60,7 +65,7 @@
                 </ul>
             </div>
             <div>
-                <h3>Proteínas</h3>
+                <h3 class="food-group_titlelista">Proteínas</h3>
                 <ul  class="food-group_lista">
                     <li onclick="buscarRecetasLista('chicken')" class="food-group_lista_detalle">Pollo</li>
                     <li onclick="buscarRecetasLista('veal')" class="food-group_lista_detalle">Ternera</li>
@@ -69,7 +74,7 @@
                 </ul>
             </div>
             <div>
-                <h3>Cereales</h3>
+                <h3 class="food-group_titlelista">Cereales</h3>
                 <ul  class="food-group_lista">
                     <li onclick="buscarRecetasLista('rice')" class="food-group_lista_detalle">Arroz</li>
                     <li onclick="buscarRecetasLista('quinoa')" class="food-group_lista_detalle">Quinoa</li>

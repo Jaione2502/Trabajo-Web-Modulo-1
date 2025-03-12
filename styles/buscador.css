@@ -6,12 +6,27 @@ body {
    
 }
 
-.search_title {
-    margin-left: 5px;
+main {
+    text-align: center;
+    padding: 20px;
 }
+
+.search_title {
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.seach_box_container{
+    text-align: center;
+
+}
+
 .search-box{
     padding-left: 0;
+    text-align: center;
     margin-left: 5px;
+  
 }
 
 .food-group {
@@ -28,7 +43,7 @@ body {
     text-align: center;
 }
 
-.food-group h3 {
+.food-group_titlelista{
     margin-top: 0;
 }
 
@@ -43,3 +58,6 @@ body {
     cursor: pointer;
 }
 
+.search_Subtitle {
+    color: #4CAF50;
+}
