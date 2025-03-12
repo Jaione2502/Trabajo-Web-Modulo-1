@@ -10,7 +10,7 @@ async function buscarRecetas() {
     }
 
     // URL de la API para buscar recetas por ingredientes
-    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=5&apiKey=${apiKey}`;
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=14&apiKey=${apiKey}`;
 
     try {
         // Hacer la solicitud a la API
@@ -26,6 +26,13 @@ async function buscarRecetas() {
 }
 
 async function buscarRecetasLista(nombre) {
+
+    const textoIngredientes = document.getElementById("ingredients");
+
+    // Limpiar el cuadro de texto de busqueda de alimentos
+    textoIngredientes.value = "";
+
+
     const ingredientes = nombre 
 
     if (!ingredientes) {
@@ -34,7 +41,7 @@ async function buscarRecetasLista(nombre) {
     }
 
     // URL de la API para buscar recetas por ingredientes
-    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=5&apiKey=${apiKey}`;
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=14&apiKey=${apiKey}`;
 
     try {
         // Hacer la solicitud a la API
@@ -52,6 +59,7 @@ async function buscarRecetasLista(nombre) {
 
 function mostrarRecetas(recetas) {
     const recipesContainer = document.getElementById("recipe-container");
+
 
     // Limpiar resultados anteriores
     recipesContainer.innerHTML = "";
