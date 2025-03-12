@@ -2,11 +2,11 @@ button {
     background: var(--color-primario);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 button.boton-modo-oscuro {
