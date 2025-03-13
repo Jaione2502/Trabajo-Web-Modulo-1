@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+   
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.search_title {
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.seach_box_container{
+    text-align: center;
+
+}
+
+.search-box{
+    padding-left: 0;
+    text-align: center;
+    margin-left: 5px;
+  
+}
+
+.food-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.food-group div {
+    background-color: #e7f7e7;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.food-group_titlelista{
+    margin-top: 0;
+}
+
+.food-group_lista {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.food-group_lista_detalle {
+    margin: 8px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search_Subtitle {
+    color: #4CAF50;
+}
+
