@@ -11,6 +11,8 @@ async function buscarRecetas() {
 
     // URL de la API para buscar recetas por ingredientes
     const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=14&apiKey=${apiKey}`;
+   
+  
 
     try {
         // Hacer la solicitud a la API
