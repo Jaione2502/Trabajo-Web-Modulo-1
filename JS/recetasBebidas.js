@@ -1,6 +1,7 @@
 const apiKey = '14a96f3eeb7242fdb189b3560d91cd49'; 
 const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&type=drink&number=6`;
 
+
 document.addEventListener("DOMContentLoaded", pedir);
 
 function pedir() {
