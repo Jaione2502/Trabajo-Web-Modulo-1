@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recetas de Cocina</title>
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/cabeceraPie.css">
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/cabeceraPie.css" />
     <link rel="stylesheet" href="styles/modoOscuro.css">
-</head>
-<body>
-    <!-- Menú superior -->
+  </head>
+  <body>
     <header>
         <nav>
             <ul>
@@ -31,14 +30,63 @@
                 <li><a href="newsletter.html">Newsletter</a></li>
             </ul>
         </nav>
-        <div>
-            <button id="modo-oscuro" class="boton-modo-oscuro">🌙 Modo Oscuro</button>
-        </div>
     </header>
-    <!-- Sección principal donde se mostrarán las recetas -->
+
     <main>
-        <h1>Página de contacto</h1>
-    
+      <h1>¡Contacta con nosotros! 📧</h1>
+      <form id="contactForm" class="form">
+        <label for="name" class="form__label">Nombre:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required=""
+          class="form__input"
+        /><br />
+        <p id="nameError" style="color: red"></p>
+
+        <label for="email" class="form__label">E-mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required=""
+          class="form__input"
+        /><br />
+        <p id="emailError" style="color: red"></p>
+
+        <label for="message" class="form__label">Mensaje:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          class="form__textarea"
+        ></textarea
+        ><br />
+        <p id="messageError" style="color: red"></p>
+        <input type="submit" value="Enviar" class="form__submit" />
+      </form>
+      <div class="content-asset contact-us-privacy">
+        <p style="text-align: justify">*Campo obligatorio</p>
+        <p style="text-align: justify">
+          La información recopilada a través de este formulario es necesaria
+          para tramitar su solicitud. Será transmitida al Servicio de Atención
+          al Cliente de EBIS encargado del tratamiento de su solicitud y será
+          conservada por EBIS durante un periodo limitado, acorde con la
+          finalidad del tratamiento. Puede ejercer sus derechos de acceso,
+          rectificación, portabilidad, supresión, oposición al tratamiento y
+          limitación del tratamiento de sus datos personales solicitándolo
+          mediante este formulario o contactando con nosotros por correo
+          electrónico en la dirección siguiente: privacy@ebis.es. Puede ser
+          necesaria una prueba de identidad para ejercer tus derechos.<br /><br />
+          Para obtener más información sobre tus otros derechos, por favor lee
+          nuestra
+          <a
+            href="https://www.youtube.com/watch?v=zL19uMsnpSU&ab_channel=cameronbarnett"
+            >Política de Privacidad y Cookies.</a
+          >
+        </p>
+      </div>
     </main>
     <footer>
         <p>&copy; 2025 Recetas de Cocina EBIS. Todos los derechos reservados.</p>
