@@ -1,35 +1,74 @@
-// Configuración de la clave de la API de Spoonacular
-const apiKey = '14a96f3eeb7242fdb189b3560d91cd49'; 
-const apiUrl = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
+ 
 
-document.addEventListener('DOMContentLoaded', () => {
-    obtenerRecetas();
-});
+   
+        async function obtenerRecetas(categoria) {
+            const API_KEY = '14a96f3eeb7242fdb189b3560d91cd49';
+            const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&query=${categoria}&number=3`;
 
-async function obtenerRecetas() {
-    try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-        mostrarRecetas(data.recipes);
-    } catch (error) {
-        console.error('Error al obtener las recetas:', error);
-    }
-}
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    mostrarRecetas(data.results, categoria);
+               })
+                .catch(error => {
+                    console.error('Error al obtener las recetas:', error);
+               });
 
-function mostrarRecetas(recetas) {
-    const container = document.getElementById('recipe-container');
-    container.innerHTML = ''; 
-    recetas.forEach(receta => {
-        const recetaCard = document.createElement('div');
-        recetaCard.classList.add('recipe-card');
-        
-        recetaCard.innerHTML = `
-            <img src="https://spoonacular.com/recipeImages/${receta.id}-312x231.jpg" alt="${receta.title}">
-            <h3>${receta.title}</h3>
-            <p>${receta.instructions ? receta.instructions.substring(0, 100) + '...' : 'Instrucciones no disponibles'}</p>
-            <a href="detalle.html?id=${receta.id}">Ver receta completa</a>
-        `;
-        
-        container.appendChild(recetaCard);
-    });
-}
+
+        }
+
+        // Función para mostrar las recetas
+        function mostrarRecetas(recetas, categoria) {
+            const recipesContainer = document.getElementById('recipe-container');
+            
+            const categoryDiv = document.createElement('div');
+            categoryDiv.classList.add('category');
+            
+            // Título de la categoría
+            const categoryTitle = document.createElement('h2');
+            categoryTitle.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1);  
+            categoryDiv.appendChild(categoryTitle);
+            
+            // Lista de recetas
+            const recipeList = document.createElement('div');
+            recipeList.classList.add('recipe-list');
+            
+            recetas.forEach(recipe => {
+                const recipeItem = document.createElement('div');
+                recipeItem.classList.add('recipe-item');
+
+                
+                const recipeImage = document.createElement('img');
+                recipeImage.src = recipe.image;
+                recipeImage.alt = recipe.title;
+                recipeItem.appendChild(recipeImage);
+
+                
+                const recipeTitle = document.createElement('h3');
+                recipeTitle.textContent = recipe.title;
+                recipeItem.appendChild(recipeTitle);
+
+                
+                const recipeLink = document.createElement('a');
+                recipeLink.href =   `detalle.html?id=${recipe.id}`
+                recipeLink.target = "_blank";
+                recipeLink.textContent = "Ver receta completa";
+                recipeItem.appendChild(recipeLink);
+
+                recipeList.appendChild(recipeItem);
+            });
+
+            categoryDiv.appendChild(recipeList);
+            recipesContainer.appendChild(categoryDiv);
+        }
+
+        // Obtenemos las categorías
+        function obtenerCategorias() {
+            const categorias = ['arroz',  'pasta', 'pollo' ];
+            
+            categorias.forEach(categoria => {
+                obtenerRecetas(categoria);
+            });
+        }
+
+        obtenerCategorias();
