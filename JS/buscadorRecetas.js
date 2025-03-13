@@ -10,7 +10,9 @@ async function buscarRecetas() {
     }
 
     // URL de la API para buscar recetas por ingredientes
-    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=5&apiKey=${apiKey}`;
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=14&apiKey=${apiKey}`;
+   
+  
 
     try {
         // Hacer la solicitud a la API
@@ -25,8 +27,41 @@ async function buscarRecetas() {
     }
 }
 
+async function buscarRecetasLista(nombre) {
+
+    const textoIngredientes = document.getElementById("ingredients");
+
+    // Limpiar el cuadro de texto de busqueda de alimentos
+    textoIngredientes.value = "";
+
+
+    const ingredientes = nombre 
+
+    if (!ingredientes) {
+        alert("Por favor, ingresa algunos ingredientes.");
+        return;
+    }
+
+    // URL de la API para buscar recetas por ingredientes
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=14&apiKey=${apiKey}`;
+
+    try {
+        // Hacer la solicitud a la API
+        const response = await fetch(url);
+        const recetas = await response.json();
+
+        // Mostrar las recetas en la página
+        mostrarRecetas(recetas);
+    } catch (error) {
+        console.error("Error al buscar recetas:", error);
+        alert("Hubo un error al buscar las recetas.");
+    }
+}
+
+
 function mostrarRecetas(recetas) {
-    const recipesContainer = document.getElementById("recipes");
+    const recipesContainer = document.getElementById("recipe-container");
+
 
     // Limpiar resultados anteriores
     recipesContainer.innerHTML = "";
@@ -54,9 +89,4 @@ function mostrarRecetas(recetas) {
         
       recipesContainer.appendChild(recetaCard);
     });
-
-
 }
-
-
-

@@ -1,0 +1,32 @@
+.category {
+    margin-bottom: 20px;
+}
+.category h2 {
+    background-color: #e7f7e7;
+    color: #4CAF50;
+    padding: 10px;
+}
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.recipe-item {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.recipe-item a {
+    text-decoration: none;
+    color:black;
+}
+.recipe-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.recipe-item h3 {
+    margin-top: 10px;
+}
