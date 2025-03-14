@@ -17,16 +17,27 @@ main {
    
 }
 
-.seach_box_container{
+.search_box_container{
     text-align: center;
+    color: black;
+}
+
+.search-box_button {
+   
+    background-color: #4CAF50;
+    color: black;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 0.3rem;
 
 }
+    
 
 .search-box{
     padding-left: 0;
-    text-align: center;
+    
     margin-left: 5px;
-  
+    color: black;
 }
 
 .food-group {
