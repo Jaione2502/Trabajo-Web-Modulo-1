@@ -1,10 +1,10 @@
 .category {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .category h2 {
     background-color: #e7f7e7;
     color: #4CAF50;
-    padding: 10px;
+    padding: 0.63rem;
 }
 .recipe-list {
     display: flex;
@@ -12,10 +12,10 @@
 }
 .recipe-item {
     width: 30%;
-    margin: 10px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 0.63rem;
+    border: 0.06rem solid #ddd;
+    padding: 0.63rem;
+    border-radius: 0.31rem;
     background-color: #f9f9f9;
 }
 .recipe-item a {
@@ -25,8 +25,8 @@
 .recipe-item img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 0.31rem;
 }
 .recipe-item h3 {
-    margin-top: 10px;
+    margin-top: 0.63rem;
 }
