@@ -16,18 +16,6 @@
     font-weight: 700;
 }
 
-.button {
-    padding: 10px 25px;
-    background-color: #4CAF50;
-    color: blac;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
 .section {
     padding: 50px 20px;
     text-align: center;
@@ -56,23 +44,22 @@
     width: 300px;
     text-align: center;
 }
-
-.recipe img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+.recipe-img {
+    max-width: 100%;
 }
+
 
 .testimonios {
     background-color: #eee;
     padding: 50px 20px;
+    text-align: center;
+    margin: 1rem;
 }
 
 .testimonio {
     background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -90,11 +77,3 @@
     margin-right: 10px;
 }
 
-.newsletter button {
-    padding: 10px 25px;
-    background-color: #4CAF50;
-    color: black;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}

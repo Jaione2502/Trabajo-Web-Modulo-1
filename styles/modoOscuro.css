@@ -1,4 +1,4 @@
-button {
+.boton-modo-oscuro {
     background: var(--color-primario);
     color: white;
     border: none;
@@ -10,9 +10,8 @@ button {
 }
 
 button.boton-modo-oscuro {
-    display:flex;  
+    display: flex;  
     flex-direction: row;
-    
 }
 
 .dark-mode {
@@ -26,5 +25,60 @@ button.boton-modo-oscuro {
 
 .dark-mode .receta {
     background: #444;
+    color: white;
+}
+
+.dark-mode .hero {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .section {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .recipe-card {
+    background-color: #555;
+    color: #333;
+}
+
+.dark-mode .beneficios h2 {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .beneficios {
+    background-color: #333;
+    color: #333;
+}
+
+.dark-mode .recipes h2 {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .recipes {
+    background-color: #333;
+    color: #333;
+}
+
+.dark-mode .testimonios h2 {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .testimonios {
+    background-color: #333;
+    color: #333;
+}
+
+.dark-mode .newsletter {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #333;
     color: white;
 }
