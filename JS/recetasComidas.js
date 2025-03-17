@@ -24,8 +24,7 @@ function mostrarRecetas(recetas) {
 
         recetaCard.innerHTML = `
             <img src="https://spoonacular.com/recipeImages/${receta.id}-312x231.jpg" alt="${receta.title}">
-            <h3>${receta.title}</h3>
-            <p>${receta.instructions ? receta.instructions.substring(0, 100) + '...' : 'Instrucciones no disponibles'}</p>
+            <h3>${receta.title}</h3>           
             <a href="detalle.html?id=${receta.id}">Ver receta completa</a>
         `;
 
