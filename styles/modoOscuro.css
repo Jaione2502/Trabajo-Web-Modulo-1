@@ -1,12 +1,15 @@
 .boton-modo-oscuro {
-    background: var(--color-primario);
-    color: white;
+    background: #333;
+    color: #fff;
     border: none;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0.5rem;
+}
+.boton-modo-oscuro:hover {
+    background: #444;
 }
 
 button.boton-modo-oscuro {
@@ -16,7 +19,7 @@ button.boton-modo-oscuro {
 
 .dark-mode {
     background-color: #222;
-    color: white;
+    color: #fff;
 }
 
 .dark-mode header {
@@ -25,7 +28,7 @@ button.boton-modo-oscuro {
 
 .dark-mode .receta {
     background: #444;
-    color: white;
+    color: #fff;
 }
 
 .dark-mode .hero {
@@ -75,10 +78,14 @@ button.boton-modo-oscuro {
 
 .dark-mode .newsletter {
     background-color: #333;
-    color: white;
+    color: #fff;
 }
 
 .dark-mode footer {
     background-color: #333;
-    color: white;
+    color: #fff;
+}
+
+.dark-mode .form__label {
+    color: #333;
 }

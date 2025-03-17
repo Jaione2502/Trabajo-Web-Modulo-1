@@ -90,9 +90,14 @@ nav a:hover {
 
 /* Estilos del pie de página */
 footer {
+    text-decoration: none;
     text-align: center;
     padding: 1.25rem;
     background-color: #333;
-    color: white;
-    margin-top: 1.25rem;
+    color: #fff;
+    margin-top: 1.25rem;    
+}
+
+.privacidad-cookies {
+    color: #fff;
 }
