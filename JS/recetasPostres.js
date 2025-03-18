@@ -49,20 +49,3 @@ function mostrarPostres(recetas) {
 
 
 
-//function mostrarPostres(postres) {
-//  const container = document.getElementById("recipe-container");
-//  container.innerHTML = ""; 
-
-//  postres.forEach(postre => {
-//    const postreCard = document.createElement("div");
-//    postreCard.classList.add("recipe-card");
-
-//    postreCard.innerHTML = `
- //     <img src="${postre.image}" alt="${postre.title}">
- //     <h3>${postre.title}</h3>
- //     <a href="detalle.html?id=${postre.id}">Ver receta completa</a>
- //   `;
-
-//    container.appendChild(postreCard);
- // });
-//};
