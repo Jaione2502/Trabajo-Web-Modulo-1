@@ -41,7 +41,7 @@ main {
 /* Estilos para el formulario de contacto */
 .form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1rem;
     background-color: white;
     border-radius: 8px;
@@ -71,6 +71,47 @@ main {
     border-radius: 5px;
     text-transform: uppercase;
 }
+
+.form__error {
+    color: red;
+}
+
+.content-asset {
+    width: 100%; 
+    max-width: 31.25rem; 
+    margin: 1.25rem auto; 
+    padding: 1.25rem;
+    background-color: #f9f9f9;
+    border-radius: .5rem;
+    box-shadow: 0 .125rem .625rem rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    box-sizing: border-box; /
+  }
+  
+  .privacy-text {
+    font-size: .625rem;
+    line-height: 1.5;
+    color: #333;
+    margin: .625rem;
+  }
+  
+  .privacy-text a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .privacy-text a:hover {
+    text-decoration: underline;
+  }
+
+  .mandatory-field {
+    font-size: .75rem;
+    color: #888;
+    text-align: center;
+    margin-top: .625rem;
+  }
+  
 
 /* Estilos responsive */
 @media (max-width: 768px) {

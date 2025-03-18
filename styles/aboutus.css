@@ -1,0 +1,65 @@
+h2 {
+    font-size: 2rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.9375rem;
+}
+
+section.content {
+    padding: 1.25rem;
+    max-width: 56.25rem;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.team {
+    margin-top: 1.875rem;
+}
+
+.team-member {
+    margin-bottom: 1.5625rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+a i {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover i {
+    color: #0056b3;
+}
+
+@media (max-width: 48rem) {
+    body {
+        padding: 0.625rem;
+    }
+
+    section.content {
+        padding: 0.9375rem;
+    }
+}
