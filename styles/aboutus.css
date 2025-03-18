@@ -4,7 +4,12 @@ h2 {
     margin-bottom: 0.9375rem;
 }
 
-section.content {
+.centrar {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.content {
     padding: 1.25rem;
     max-width: 56.25rem;
     margin: 1rem auto;

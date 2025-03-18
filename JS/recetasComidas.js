@@ -1,5 +1,5 @@
 const apiKey = '14a96f3eeb7242fdb189b3560d91cd49';
-const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=lunch&type=lunch&cuisine=spanish&number=6&apiKey=${apiKey}`;
+const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=lunch&type=snack&number=6&apiKey=${apiKey}`;
 
 document.addEventListener('DOMContentLoaded', () => {
     obtenerRecetas();
