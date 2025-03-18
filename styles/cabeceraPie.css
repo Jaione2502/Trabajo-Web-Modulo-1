@@ -45,14 +45,14 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0.625rem;
-    font-size: 1.125rem;
+    padding: 0.6rem;
+    font-size: 1.25rem;
 }
 
 /* Efecto de hover en los enlaces del menú */
 nav a:hover {
-    background-color: #575757;
-    border-radius: 0.3125rem;
+    background-color: #444;
+    border-radius: 0.5rem;
 }
 
 /* Estilos del submenú (dropdown) */
@@ -90,9 +90,14 @@ nav a:hover {
 
 /* Estilos del pie de página */
 footer {
+    text-decoration: none;
     text-align: center;
     padding: 1.25rem;
     background-color: #333;
-    color: white;
-    margin-top: 1.25rem;
+    color: #fff;
+    margin-top: 1.25rem;    
+}
+
+.privacidad-cookies {
+    color: #fff;
 }
