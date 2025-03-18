@@ -1,5 +1,5 @@
 const apiKey = '14a96f3eeb7242fdb189b3560d91cd49'; 
-const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&type=drink&number=10`;
+const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&type=drink&number=6`;
 
 
 document.addEventListener("DOMContentLoaded", pedir);
@@ -11,21 +11,39 @@ function pedir() {
     .catch(error => console.error("Error al obtener las bebidas:", error));
 }
 
-function mostrarBebidas(bebidas) {
-  const container = document.getElementById("recipe-container");
-  container.innerHTML = ""; 
+function mostrarBebidas(recetas) {
+  const recipesContainer = document.getElementById('recipe-container');
+  
+  
+  // Lista de recetas
+  const recipeList = document.createElement('div');
+  recipeList.classList.add('recipe-list');
+  
+  recetas.forEach(recipe => {
+      const recipeItem = document.createElement('div');
+      recipeItem.classList.add('recipe-item');
 
-  bebidas.forEach(bebida => {
-    const bebidaCard = document.createElement("div");
-    bebidaCard.classList.add("recipe-card");
+      
+      const recipeImage = document.createElement('img');
+      recipeImage.src = recipe.image;
+      recipeImage.alt = recipe.title;
+      recipeItem.appendChild(recipeImage);
 
-    bebidaCard.innerHTML = `
-      <img src="${bebida.image}" alt="${bebida.title}">
-      <h3>${bebida.title}</h3>
-      <a href="detalle.html?id=${bebida.id}">Ver receta completa</a>
-    `;
+      
+      const recipeTitle = document.createElement('h3');
+      recipeTitle.textContent = recipe.title;
+      recipeItem.appendChild(recipeTitle);
 
-    container.appendChild(bebidaCard);
+      
+      const recipeLink = document.createElement('a');
+      recipeLink.href =   `detalle.html?id=${recipe.id}`
+      recipeLink.target = "_blank";
+      recipeLink.textContent = "Ver receta completa";
+      recipeItem.appendChild(recipeLink);
+
+      recipeList.appendChild(recipeItem);
   });
-}
 
+
+  recipesContainer.appendChild(recipeList);
+}
