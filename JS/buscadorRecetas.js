@@ -10,7 +10,7 @@ async function buscarRecetas() {
     }
 
     // URL de la API para buscar recetas por ingredientes
-    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=14&apiKey=${apiKey}`;
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=6&apiKey=${apiKey}`;
    
   
 
@@ -43,7 +43,7 @@ async function buscarRecetasLista(nombre) {
     }
 
     // URL de la API para buscar recetas por ingredientes
-    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=14&apiKey=${apiKey}`;
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientes}&number=6&apiKey=${apiKey}`;
 
     try {
         // Hacer la solicitud a la API
@@ -60,33 +60,39 @@ async function buscarRecetasLista(nombre) {
 
 
 function mostrarRecetas(recetas) {
-    const recipesContainer = document.getElementById("recipe-container");
-
-
-    // Limpiar resultados anteriores
+    const recipesContainer = document.getElementById('recipe-container');
+    
     recipesContainer.innerHTML = "";
+    // Lista de recetas
+    const recipeList = document.createElement('div');
+    recipeList.classList.add('recipe-list');
+    
+    recetas.forEach(recipe => {
+        const recipeItem = document.createElement('div');
+        recipeItem.classList.add('recipe-item');
 
-    // Si no hay recetas, mostrar mensaje
-    if (recetas.length === 0) {
-        recipesContainer.innerHTML = "<p>No se encontraron recetas con esos ingredientes.</p>";
-        return;
-    }
+        
+        const recipeImage = document.createElement('img');
+        recipeImage.src = recipe.image;
+        recipeImage.alt = recipe.title;
+        recipeItem.appendChild(recipeImage);
 
- 
-    recetas.forEach(receta => {
-        const recetaCard = document.createElement('div');
-        recetaCard.classList.add('recipe-card');
         
-        recetaCard.innerHTML =`
-            <div class="recipe-details">
-                <img src="${receta.image}" alt="${receta.title}" />
-                <div>
-                    <h3>${receta.title}</h3>
-                    <a href="detalle.html?id=${receta.id}">Ver receta completa</a>
-                </div>
-            </div>
-      `;
+        const recipeTitle = document.createElement('h3');
+        recipeTitle.textContent = recipe.title;
+        recipeItem.appendChild(recipeTitle);
+
         
-      recipesContainer.appendChild(recetaCard);
+        const recipeLink = document.createElement('a');
+        recipeLink.href =   `detalle.html?id=${recipe.id}`
+        recipeLink.target = "_blank";
+        recipeLink.textContent = "Ver receta completa";
+        recipeItem.appendChild(recipeLink);
+
+        recipeList.appendChild(recipeItem);
     });
+
+
+    recipesContainer.appendChild(recipeList);
 }
+

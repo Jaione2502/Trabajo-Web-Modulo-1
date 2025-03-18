@@ -1,9 +1,5 @@
 const apiKey = '14a96f3eeb7242fdb189b3560d91cd49';
-
-const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&type=breakfast&number=10`;
-
-
-
+const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&type=breakfast&number=6`;
 
 document.addEventListener('DOMContentLoaded', () => {
     obtenerRecetas();
@@ -19,19 +15,41 @@ async function obtenerRecetas() {
     }
 }
 
+
 function mostrarRecetas(recetas) {
-    const container = document.getElementById('recipe-container');
-    container.innerHTML = '';
-    recetas.forEach(receta => {
-        const recetaCard = document.createElement('div');
-        recetaCard.classList.add('recipe-card');
+    const recipesContainer = document.getElementById('recipe-container');
+    
+    
+    // Lista de recetas
+    const recipeList = document.createElement('div');
+    recipeList.classList.add('recipe-list');
+    
+    recetas.forEach(recipe => {
+        const recipeItem = document.createElement('div');
+        recipeItem.classList.add('recipe-item');
 
-        recetaCard.innerHTML = `
-            <img src="https://spoonacular.com/recipeImages/${receta.id}-312x231.jpg" alt="${receta.title}">
-            <h3>${receta.title}</h3>           
-            <a href="detalle.html?id=${receta.id}">Ver receta completa</a>
-        `;
+        
+        const recipeImage = document.createElement('img');
+        recipeImage.src = recipe.image;
+        recipeImage.alt = recipe.title;
+        recipeItem.appendChild(recipeImage);
 
-        container.appendChild(recetaCard);
+        
+        const recipeTitle = document.createElement('h3');
+        recipeTitle.textContent = recipe.title;
+        recipeItem.appendChild(recipeTitle);
+
+        
+        const recipeLink = document.createElement('a');
+        recipeLink.href =   `detalle.html?id=${recipe.id}`
+        recipeLink.target = "_blank";
+        recipeLink.textContent = "Ver receta completa";
+        recipeItem.appendChild(recipeLink);
+
+        recipeList.appendChild(recipeItem);
     });
+
+
+    recipesContainer.appendChild(recipeList);
 }
+
