@@ -29,12 +29,7 @@ async function buscarRecetas() {
 
 async function buscarRecetasLista(nombre) {
 
-    const textoIngredientes = document.getElementById("ingredients");
-
-    // Limpiar el cuadro de texto de busqueda de alimentos
-    textoIngredientes.value = "";
-
-
+  
     const ingredientes = nombre 
 
     if (!ingredientes) {
