@@ -28,6 +28,19 @@ main {
     text-transform: uppercase;
 }
 
+.centrar {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.content {
+    padding: 1.25rem;
+    max-width: 56.25rem;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+}
 
 
 .section {
@@ -110,8 +123,7 @@ main {
     color: #888;
     text-align: center;
     margin-top: .625rem;
-  }
-  
+  }  
 
 /* Estilos responsive */
 @media (max-width: 768px) {
