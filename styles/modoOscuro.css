@@ -89,3 +89,11 @@ button.boton-modo-oscuro {
 .dark-mode .form__label {
     color: #333;
 }
+
+.dark-mode .food-group_titlelista {
+    color: #333;
+}
+
+.dark-mode .food-group_lista_detalle {
+    color: #333;
+}
