@@ -1,6 +1,5 @@
 
 .hero {
-    background-image: url('https://api.spoonacular.com/recipes/complexSearch?query=lunch&type=lunch&cuisine=spanish&number=6&apiKey=${apiKey}');
     background-size: cover;
     background-position: center;
     height: 400px;

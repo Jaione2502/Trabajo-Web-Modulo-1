@@ -60,6 +60,9 @@ button.boton-modo-oscuro {
     background-color: #333;
     color: #fff;
 }
+.dark-mode .recipe-item h3 {
+    color: #333;
+}
 
 .dark-mode .recipes {
     background-color: #333;
