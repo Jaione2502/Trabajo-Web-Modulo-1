@@ -1,14 +1,18 @@
 .category {
     margin-bottom: 1.25rem;
+    width: 100%;
 }
 .category h2 {
     background-color: #e7f7e7;
     color: #4CAF50;
     padding: 0.63rem;
+    width: 100%;
 }
 .recipe-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center; /* Centrar la lista de recetas */
 }
 .recipe-item {
     width: 30%;
@@ -25,8 +29,18 @@
 .recipe-item img {
     width: 100%;
     height: auto;
-    border-radius: 0.31rem;
+    border-radius: 0.3rem;
 }
 .recipe-item h3 {
-    margin-top: 0.63rem;
+    margin-top: 0.6rem;
+}
+
+@media (max-width: 768px) {
+    .recipe-list {
+        flex-direction: column;
+    }
+    .recipe-item {
+        width: 100%;
+        margin: 0.3rem 0;
+    }
 }
