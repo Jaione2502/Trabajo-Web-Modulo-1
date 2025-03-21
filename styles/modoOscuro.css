@@ -89,14 +89,32 @@ button.boton-modo-oscuro {
     color: #fff;
 }
 
-.dark-mode .form__label {
-    color: #333;
-}
-
 .dark-mode .food-group_titlelista {
     color: #333;
 }
 
 .dark-mode .food-group_lista_detalle {
     color: #333;
+}
+
+.dark-mode .team-member h3 {
+    color: #fff;
+}
+
+.dark-mode .testimonio {
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .form {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .form__label {
+    color: #fff;
+}
+
+.dark-mode .privacy-text {
+    color: #fff;
 }
