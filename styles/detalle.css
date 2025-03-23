@@ -7,7 +7,7 @@
   
  .body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #fff;
     color: #333;
 }
 
@@ -16,3 +16,30 @@
     text-align: left;
 }
 
+.detalle-receta h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;    
+}
+
+.detalle-receta p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.detalle-receta img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.detalle-receta ul {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+.detalle-receta li {
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+}
