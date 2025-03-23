@@ -24,7 +24,7 @@ main {
     color: #FFF;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     text-transform: uppercase;
 }
 
@@ -35,30 +35,29 @@ main {
 
 .content {
     padding: 1.25rem;
-    max-width: 56.25rem;
+    max-width: 35rem;
     margin: 1rem auto;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
-
 .section {
-    padding: 20px;
-    margin: 20px;
+    padding: 1.25rem;
+    margin: 1.25rem;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para el formulario de contacto */
 .form {
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: 1rem auto;
     padding: 1rem;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .form__label {
@@ -71,8 +70,8 @@ main {
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
 }
 
 .form__submit {
@@ -81,7 +80,7 @@ main {
     border: none;
     padding: 0.75rem 2.5rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     text-transform: uppercase;
 }
 
@@ -91,43 +90,42 @@ main {
 
 .content-asset {
     width: 100%; 
-    max-width: 31.25rem; 
+    max-width: 20rem; 
     margin: 1.25rem auto; 
     padding: 1.25rem;
     background-color: #f9f9f9;
-    border-radius: .5rem;
-    box-shadow: 0 .125rem .625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
     text-align: center; 
-    box-sizing: border-box; /
-  }
-  
-  .privacy-text {
-    font-size: .625rem;
+    box-sizing: border-box; 
+}
+
+.privacy-text {
+    font-size: 0.625rem;
     line-height: 1.5;
     color: #333;
-    margin: .625rem;
-  }
-  
-  .privacy-text a {
+    margin: 0.625rem;
+}
+
+.privacy-text a {
     color: #0066cc;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .privacy-text a:hover {
-    text-decoration: underline;
-  }
+}
 
-  .mandatory-field {
-    font-size: .75rem;
+.privacy-text a:hover {
+    text-decoration: underline;
+}
+
+.mandatory-field {
+    font-size: 0.75rem;
     color: #888;
     text-align: center;
-    margin-top: .625rem;
-  }  
+    margin-top: 0.625rem;
+}
 
 /* Estilos responsive */
 @media (max-width: 768px) {
-    
 
     .hero div {
         text-align: center;
@@ -154,8 +152,39 @@ main {
 
     .newsletter input {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.6rem;
     }
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    margin: 0;
+    display: inline;
+}
+
+.cookie-banner a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.cookie-banner .button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
 }
 
 
