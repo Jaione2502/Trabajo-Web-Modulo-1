@@ -3,29 +3,17 @@
 h2 {
     font-size: 2rem;
     margin-top: 1.25rem;
-    margin-bottom: 0.9375rem;
+    margin-bottom: 1rem;
 }
 
-.centrar {
-    text-align: center;
-    margin-top: 1rem;
-}
 
-.content {
-    padding: 1.25rem;
-    max-width: 56.25rem;
-    margin: 1rem auto;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
-}
 
 .team {
-    margin-top: 1.875rem;
+    margin-top: 1.8rem;
 }
 
 .team-member {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 1.5rem;
 }
 
 .team-member h3 {
