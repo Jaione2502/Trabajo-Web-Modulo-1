@@ -19,18 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("modo") === "oscuro") {
         document.body.classList.add("dark-mode");
     }
-
-    // Banner de cookies
-    const cookieBanner = document.getElementById("cookie-banner");
-    const aceptarCookies = document.getElementById("aceptar-cookies");
-
-    if (!localStorage.getItem("cookiesAccepted")) {
-        cookieBanner.style.display = "block";
-    }
-
-    aceptarCookies.addEventListener("click", () => {
-        localStorage.setItem("cookiesAccepted", "true");
-        cookieBanner.style.display = "none";
-    });
 });
 

@@ -1,12 +1,13 @@
 
 .hero {
-    background-image: url(https://www.recetasderechupete.com/wp-content/uploads/2013/05/Libro-Recetas-Italianas-Rechupete-1200x825.jpg);
     background-size: cover;
     background-position: center;
-    height: 30rem;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:black;
+    text-align: center;
 }
 
 .hero h1 {
@@ -15,31 +16,31 @@
 }
 
 .section {
-    padding: 5rem 2rem;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .section h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .beneficios,
 .recipes {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 30px;
     flex-wrap: wrap;
-    margin-top: 3;
+    margin-top: 30px;
 }
 
 .beneficio,
 .recipe {
     background-color: #e7f7e7;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-    width: 30rem;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
 .recipe-img {
@@ -49,7 +50,7 @@
 
 .testimonios {
     background-color: #eee;
-    padding: 3rem 2rem;
+    padding: 50px 20px;
     text-align: center;
     margin: 1rem;
 }
@@ -58,14 +59,20 @@
     background-color: white;
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.testimonio p {
+    font-style: italic;
+}
+
+
 .newsletter input {
-    padding: 1rem;
+    padding: 10px;
     width: 70%;
     border: solid 0.01rem;
-    border-radius: 0.5rem;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
