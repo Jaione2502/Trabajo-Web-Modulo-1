@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center; /* Centrar la lista de recetas */
+    justify-content: center; 
 }
 .recipe-item {
     width: 30%;
