@@ -1,4 +1,3 @@
-// Reemplaza esto con tu clave de API de Spoonacular
 const apiKey = '14a96f3eeb7242fdb189b3560d91cd49';
 
 async function buscarRecetas() {

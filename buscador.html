@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="styles/recetasPopulares.css">
 </head>
 </head>
+
 <body>
     <!-- Menú superior -->
     <header>
@@ -41,12 +43,12 @@
 
     <h1 class="search_title">Buscador de Recetas</h1>
     <br>
-    <div class="search_box_container">    
-        
+    <div class="search_box_container">
+
         <input type="text" id="ingredients" class="search-box" placeholder="Ingresa los alimentos separados por coma" />
         <button class="button" onclick="buscarRecetas()">Buscar Recetas</button>
     </div>
-    
+
     <div class="section">
         <h2 class="search_Subtitle">Alimentos Populares</h2>
         <div class="food-group">
@@ -61,7 +63,7 @@
             </div>
             <div>
                 <h3 class="food-group_titlelista">Verduras</h3>
-                <ul  class="food-group_lista">
+                <ul class="food-group_lista">
                     <li onclick="buscarRecetasLista('carrot')" class="food-group_lista_detalle">Zanahoria</li>
                     <li onclick="buscarRecetasLista('tomato')" class="food-group_lista_detalle">Tomate</li>
                     <li onclick="buscarRecetasLista('lettuce')" class="food-group_lista_detalle">Lechuga</li>
@@ -70,7 +72,7 @@
             </div>
             <div>
                 <h3 class="food-group_titlelista">Proteínas</h3>
-                <ul  class="food-group_lista">
+                <ul class="food-group_lista">
                     <li onclick="buscarRecetasLista('chicken')" class="food-group_lista_detalle">Pollo</li>
                     <li onclick="buscarRecetasLista('veal')" class="food-group_lista_detalle">Ternera</li>
                     <li onclick="buscarRecetasLista('fish')" class="food-group_lista_detalle">Pescado</li>
@@ -79,7 +81,7 @@
             </div>
             <div>
                 <h3 class="food-group_titlelista">Cereales</h3>
-                <ul  class="food-group_lista">
+                <ul class="food-group_lista">
                     <li onclick="buscarRecetasLista('rice')" class="food-group_lista_detalle">Arroz</li>
                     <li onclick="buscarRecetasLista('quinoa')" class="food-group_lista_detalle">Quinoa</li>
                     <li onclick="buscarRecetasLista('oatmeal')" class="food-group_lista_detalle">Avena</li>
@@ -88,20 +90,20 @@
             </div>
         </div>
     </div>
-   
+
     <div id="recipe-container" class="recipe-container">
-           
+
     </div>
 
 
 
     <footer>
-        <p>&copy; 2025 Recetas de Cocina EBIS. Todos los derechos reservados.</p><a class="privacidad-cookies" href="privacidad.html">Política de Privacidad y Cookies</a>
+        <p>&copy; 2025 Recetas de Cocina EBIS. Todos los derechos reservados.</p><a class="privacidad-cookies"
+            href="privacidad.html">Política de Privacidad y Cookies</a>
     </footer>
     <script src="js/buscadorRecetas.js"></script>
     <script src="JS/modoOscuro.js"></script>
 
 </body>
+
 </html>
-
-

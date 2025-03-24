@@ -1,4 +1,3 @@
-// Configuración de la clave de la API de Spoonacular
 const apiKey = '14a96f3eeb7242fdb189b3560d91cd49'; 
 const apiUrl = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 
