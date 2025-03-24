@@ -35,6 +35,10 @@
     margin-bottom: 1rem;
 }
 
+.detalle-receta ul {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
 
 .detalle-receta li {
     margin-bottom: 0.5rem;
