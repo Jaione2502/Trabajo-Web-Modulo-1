@@ -118,3 +118,7 @@ button.boton-modo-oscuro {
 .dark-mode .privacy-text {
     color: #fff;
 }
+
+.dark-mode .detalle-receta p {
+    color: #fff
+}
