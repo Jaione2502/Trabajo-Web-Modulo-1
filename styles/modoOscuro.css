@@ -50,25 +50,16 @@ button.boton-modo-oscuro {
 }
 
 .dark-mode .beneficios h2 {
-    background-color: #333;
     color: #fff;
 }
 
 .dark-mode .beneficios {
-    background-color: #333;
-    color: #333;
-}
-
-.dark-mode .recipes h2 {
-    background-color: #333;
-    color: #fff;
-}
-.dark-mode .recipe-item h3 {
+    background-color: #444;
     color: #333;
 }
 
 .dark-mode .recipes {
-    background-color: #333;
+    background-color: #444;
     color: #333;
 }
 
@@ -121,3 +112,8 @@ button.boton-modo-oscuro {
 .dark-mode .privacy-text {
     color: #fff;
 }
+
+.dark-mode .detalle-receta h2 {
+    color: #fff
+}
+
