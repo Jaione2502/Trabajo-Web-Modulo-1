@@ -133,28 +133,30 @@ main {
     }
 
     .beneficios {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .beneficio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe {
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .recipes {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+}
 
-    .testimonios {
-        text-align: center;
-    }
-
-    .newsletter {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .newsletter input {
-        width: 100%;
-        margin-bottom: 0.6rem;
-    }
+.newsletter {
+    line-height: 1.5;
 }
 
 .cookie-banner {
@@ -164,8 +166,8 @@ main {
     background-color: #333;
     color: #fff;
     text-align: center;
+    align-items: center;
     padding: 1rem;
-    z-index: 1000;
 }
 
 .cookie-banner p {

@@ -3,6 +3,9 @@ h2 {
     margin-top: 1.25rem;
     margin-bottom: 1rem;
 }
+p {
+    line-height: 1.5;
+}
 
 .team {
     margin-top: 1.8rem;
