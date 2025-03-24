@@ -31,9 +31,12 @@ button.boton-modo-oscuro {
     color: #fff;
 }
 
-.dark-mode .hero {
-    background-color: #333;
-    color: #fff;
+.dark-mode .hero h1 {
+    color: #333;
+}
+
+.dark-mode .hero p {
+    color: #333;
 }
 
 .dark-mode .section {
@@ -117,8 +120,4 @@ button.boton-modo-oscuro {
 
 .dark-mode .privacy-text {
     color: #fff;
-}
-
-.dark-mode .detalle-receta p {
-    color: #fff
 }
