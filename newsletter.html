@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/cabeceraPie.css">
+    <link rel="stylesheet" href="styles/landingPage.css">
+    <link rel="stylesheet" href="styles/modoOscuro.css">
+</head>
+<body>
+    <!-- Menú superior -->
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="recetas.html" class="dropbtn">Recetas</a>
+                    <div class="dropdown-content">
+                        <a href="recetas.html">Recetas Populares</a>
+                        <a href="buscador.html">Buscador de Recetas</a>
+                        <a href="desayunos.html">Desayunos</a>
+                        <a href="comidas.html">Comidas</a>
+                        <a href="cenas.html">Cenas</a>
+                        <a href="bebidas.html">Bebidas</a>
+                        <a href="postres.html">Postres</a>
+                    </div>
+                </li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button id="modo-oscuro" class="boton-modo-oscuro">🌙 Modo Oscuro</button>
+        </div>
+    </header>
+
+
+    <main class="section">
+        <h1>Newsletter</h1>
+        <p>Suscríbete a nuestra newsletter para recibir las últimas recetas y noticias directamente en tu bandeja de entrada.</p>
+        <form>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <button class="button" type="submit">Suscribirse</button>
+        </form>
+        <section class="testimonio">
+            <h2>Beneficios de suscribirse:</h2>
+            <ul>
+                <p>Recibe recetas exclusivas directamente en tu correo.</p>
+                <p>Acceso anticipado a nuevos contenidos y funciones.</p>
+                <p>Participa en sorteos y concursos exclusivos para suscriptores.</p>
+                <p>Consejos y trucos de cocina de nuestros expertos.</p>
+            </ul>
+        </section>
+        <section>
+
+            <h2>Testimonios de nuestros suscriptores:</h2>
+            <div class="testimonio">                
+                <blockquote>
+                    "Desde que me suscribí a la newsletter, he descubierto recetas increíbles que han mejorado mi cocina diaria." - María López
+                </blockquote>
+            </div>
+            <div class="testimonio">    
+                <blockquote>
+                    "Me encanta recibir las últimas noticias y recetas directamente en mi correo. ¡Es muy conveniente!" - Juan Pérez
+                </blockquote>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Recetas de Cocina EBIS. Todos los derechos reservados.</p><a class="privacidad-cookies" href="privacidad.html">Política de Privacidad y Cookies</a>
+    </footer>
+    <script src="JS/modoOscuro.js"></script>
+
+</body>
+</html>
