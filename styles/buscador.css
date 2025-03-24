@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
-   
+
 }
 
 main {
@@ -13,7 +13,7 @@ main {
 .search_title {
     padding: 1.25rem;
     text-align: center;
-   
+
 }
 
 .search_box_container {
@@ -30,34 +30,33 @@ main {
     border: none;
     cursor: pointer;
     border-radius: 0.5rem;
-   
+
 }
 
-.search-box{
+.search-box {
     padding-left: 0;
     margin-left: 0.3rem;
     color: #333;
     width: 50%;
 }
+
 @media (min-width: 768px) {
     .food-group {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
-
-    
 }
 
 .food-group div {
     background-color: #e7f7e7;
     padding: 0.9rem;
     border-radius: 0.3rem;
-    box-shadow: 0 0.1rem  0.3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.food-group_titlelista{
+.food-group_titlelista {
     margin-top: 0;
 }
 
@@ -80,4 +79,3 @@ main {
 footer {
     position: relative;
 }
-

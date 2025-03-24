@@ -1,4 +1,3 @@
-
 header {
     background-color: #333;
     color: white;
@@ -97,7 +96,7 @@ footer {
     padding: 1.25rem;
     background-color: #333;
     color: #fff;
-    margin-top: 1.25rem;    
+    margin-top: 1.25rem;
 }
 
 .privacidad-cookies {
@@ -110,7 +109,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-   
+
     header nav ul li {
         margin: 0.5rem;
     }

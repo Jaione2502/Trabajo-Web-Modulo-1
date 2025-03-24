@@ -1,4 +1,3 @@
-
 .hero {
     background-image: url(https://www.recetasderechupete.com/wp-content/uploads/2013/05/Libro-Recetas-Italianas-Rechupete-1200x825.jpg);
     background-size: cover;
@@ -42,6 +41,7 @@
     width: 30rem;
     text-align: center;
 }
+
 .recipe-img {
     max-width: 100%;
 }
@@ -68,4 +68,3 @@
     border: solid 0.01rem;
     border-radius: 0.5rem;
 }
-

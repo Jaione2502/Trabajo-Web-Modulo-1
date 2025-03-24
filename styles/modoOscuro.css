@@ -8,12 +8,13 @@
     transition: 0.3s;
     border-radius: 0.5rem;
 }
+
 .boton-modo-oscuro:hover {
     background: #444;
 }
 
 button.boton-modo-oscuro {
-    display: flex;  
+    display: flex;
     flex-direction: row;
 }
 
@@ -116,4 +117,3 @@ button.boton-modo-oscuro {
 .dark-mode .detalle-receta h2 {
     color: #fff
 }
-

@@ -1,17 +1,16 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
- .body {
+}
+
+.body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #333;
 }
 
-.main {   
+.main {
     padding: 1.25rem;
     text-align: left;
 }
@@ -19,7 +18,7 @@
 .detalle-receta h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #333;    
+    color: #333;
 }
 
 .detalle-receta p {
