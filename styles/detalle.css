@@ -26,6 +26,7 @@
     font-size: 1.25rem;
     margin-bottom: 1rem;
     color: #333;
+    text-align: center;
 }
 
 .detalle-receta img {
@@ -34,10 +35,6 @@
     margin-bottom: 1rem;
 }
 
-.detalle-receta ul {
-    list-style-type: none;
-    margin-bottom: 0.5rem;
-}
 
 .detalle-receta li {
     margin-bottom: 0.5rem;
